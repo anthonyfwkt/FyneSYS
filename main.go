@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
 )
 
 func updateTime(clock *widget.Label) {
@@ -10,7 +13,6 @@ func updateTime(clock *widget.Label) {
 	clock.SetText(formatted)
 }
 func main() {
-
 	a := app.New()
 	w := a.NewWindow("Hello")
 	clock := widget.NewLabel("")
